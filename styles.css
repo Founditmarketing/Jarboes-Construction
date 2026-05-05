@@ -243,38 +243,15 @@ h1, h2, h3, h4, h5 {
   gap: var(--sp-3);
   flex-shrink: 0;
 }
-.nav__logo-mark {
-  width: 42px; height: 42px;
-  background: var(--orange-500);
-  color: var(--white);
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--r-sm);
-  flex-shrink: 0;
-  transition: background var(--t-fast);
-}
-.nav__logo:hover .nav__logo-mark { background: var(--orange-600); }
-.nav__logo-text {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--white);
-  line-height: 1.25;
-}
-.nav__logo-text em {
+.nav__logo-img {
+  height: 40px;
+  width: auto;
   display: block;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.45);
-  font-size: 0.85em;
+  /* logo is dark on transparent — invert for dark nav bg */
+  filter: brightness(0) invert(1);
+  transition: opacity var(--t-fast);
 }
+.nav__logo:hover .nav__logo-img { opacity: 0.85; }
 .nav__links {
   display: flex;
   align-items: center;
@@ -971,35 +948,15 @@ h1, h2, h3, h4, h5 {
   gap: var(--sp-3);
   margin-bottom: var(--sp-5);
 }
-.footer__logo-mark {
-  width: 42px; height: 42px;
-  background: var(--orange-500);
-  color: var(--white);
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--r-sm);
-}
-.footer__logo-text {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--white);
-  line-height: 1.25;
-}
-.footer__logo-text em {
+.footer__logo-img {
+  height: 36px;
+  width: auto;
   display: block;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.35);
-  font-size: 0.85em;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: opacity var(--t-fast);
 }
+.footer__logo:hover .footer__logo-img { opacity: 1; }
 .footer__brand > p {
   font-size: var(--text-sm);
   color: rgba(255,255,255,0.38);
