@@ -1122,8 +1122,8 @@ h1, h2, h3, h4, h5 {
 .about--page .about__inner { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--sp-6); }
 
 /* SERVICES EXTRA */
-.services__also { text-align: center; padding: 2.5rem; background: var(--orange-100); border-radius: var(--r-lg); border: 1px solid rgba(232,114,28,0.2); }
-.services__also p { font-size: var(--text-lg); margin-bottom: 1.5rem; color: var(--navy-800); }
+.services__also--light { text-align: center; padding: 2.5rem; background: var(--orange-100); border-radius: var(--r-lg); border: 1px solid rgba(232,114,28,0.2); flex-direction: column; justify-content: center; }
+.services__also--light p { font-size: var(--text-lg); margin-bottom: 1.5rem; color: var(--navy-800); }
 
 /* REVIEWS PAGE */
 .reviews--page { padding: var(--sp-16) 0; background: var(--white); }
