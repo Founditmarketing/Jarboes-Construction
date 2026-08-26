@@ -1,0 +1,16 @@
+{
+  "name": "jarboes-construction",
+  "version": "1.0.0",
+  "description": "Jarboes Construction website",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static HTML site - no build needed'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": ["construction", "website"],
+  "author": "Jarboes Construction",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
